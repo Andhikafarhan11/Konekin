@@ -1,5 +1,4 @@
-package com.example.konekin.network // Sesuaikan dengan nama package utamamu
-
+package com.example.konekin.network
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -15,7 +14,7 @@ object ApiClient {
             .build()
 
         val builder = Retrofit.Builder()
-            .baseUrl("https://dummy.restapiexample.com/api/v1/")
+            .baseUrl("https://6af5c2cef6270fa08d689474.mockapi.io/")
             .addConverterFactory(GsonConverterFactory.create())
             .client(mOkHttpClient)
             .build()
